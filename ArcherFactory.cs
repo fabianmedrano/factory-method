@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace factory_method
 {
-  
-
-    public class Cavalry : MilitaryUnit
+    public class ArcherFactory : MilitaryUnitFactory
     {
-
-        public override void attack()
+        public override MilitaryUnit CreateUnit()
         {
-            Console.WriteLine("attacking the flanks and rearguard");
+            return new Archer();
         }
     }
 }

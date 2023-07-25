@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace factory_method
 {
-    internal class Archer : MilitaryUnit
+    public class Archer : MilitaryUnit
     {
         public override void attack()
         {
+            Console.WriteLine("fire arrows");
         }
     }
 }

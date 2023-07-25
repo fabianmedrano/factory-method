@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace factory_method
 {
-    internal class Infantry : MilitaryUnit
+    public class Infantry : MilitaryUnit
     {
 
-        public override void attack() { 
+        public override void attack() {
+            Console.WriteLine("assault, ambush and flanking");
         }
     }
 }

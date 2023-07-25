@@ -10,13 +10,20 @@ namespace factory_method
     {
         static void Main(string[] args)
         {
-            MilitaryUnitFactory infantryFactory = new InfantryFactory();
+            MilitaryUnitFactory cavalryFactory = new CavalryFactory();
+            MilitaryUnit cavalry = cavalryFactory.CreateUnit();
 
+            MilitaryUnitFactory infantryFactory = new InfantryFactory();
             MilitaryUnit infantry = infantryFactory.CreateUnit();
 
+       
+            MilitaryUnitFactory archerFactory = new ArcherFactory();
+            MilitaryUnit archer = archerFactory.CreateUnit();
 
 
             infantry.attack();
+            cavalry.attack();
+            archer.attack();
         }
     }
 
